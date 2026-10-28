@@ -1,0 +1,37 @@
+# HospIT website + PostgreSQL
+#   1) cp .env.local.example .env   and fill in the values (at least POSTGRES_PASSWORD)
+#   2) docker compose up -d --build
+#   3) put a reverse proxy with HTTPS in front of 127.0.0.1:3000 (see README.md)
+#
+# Already have a PostgreSQL server? Delete the "db" service, remove "depends_on",
+# and set DATABASE_URL in .env to your server instead.
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: hospit
+      POSTGRES_USER: hospit
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hospit -d hospit"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  web:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-postgres://hospit:${POSTGRES_PASSWORD}@db:5432/hospit}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:3000:3000"
+    restart: unless-stopped
+
+volumes:
+  pgdata:

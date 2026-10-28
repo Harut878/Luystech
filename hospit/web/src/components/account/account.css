@@ -1,0 +1,95 @@
+/* ═══════ HospIT — հաճախորդի անձնական էջ (ադմինկայի նույն գունային համակարգով) ═══════ */
+.acc-wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px 60px; position: relative; z-index: 1; }
+
+.acc-top {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(11,17,32,.82); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--a-border);
+}
+.acc-top-in { max-width: 1120px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; gap: 12px; }
+.acc-top-in .acc-spacer { flex: 1; }
+/* Հեռախոսում կայքի կոճակը՝ միայն պատկերանշանով, որ վերնագիրը տեղավորվի */
+@media (max-width: 480px) {
+  .acc-top-in { gap: 8px; padding: 12px 14px; }
+  .acc-site-link span { display: none; }
+  .acc-site-link { padding: 8px 10px; }
+}
+
+.acc-hero { padding: 34px 0 26px; display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.acc-hello { font-size: 14px; color: var(--a-dim); margin-bottom: 6px; }
+.acc-name { font-size: clamp(24px, 3.4vw, 34px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.acc-inst { display: inline-flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 14.5px; color: var(--a-text); opacity: .85; }
+
+.acc-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 900px) { .acc-grid { grid-template-columns: 1fr; } }
+
+.acc-card { background: var(--a-card); border: 1px solid var(--a-border); border-radius: 18px; padding: 24px; margin-bottom: 18px; }
+.acc-card h2 { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--a-dim); margin: 0 0 16px; }
+
+/* Փաթեթի գլխավոր քարտ */
+.acc-plan { position: relative; overflow: hidden; }
+.acc-plan::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
+  background: linear-gradient(90deg, var(--a-blue), var(--a-cyan));
+}
+.acc-plan-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }
+.acc-plan-name { font-size: clamp(20px, 2.6vw, 26px); font-weight: 800; line-height: 1.2; }
+.acc-plan-sub { font-size: 13.5px; color: var(--a-cyan); font-weight: 600; margin-top: 4px; }
+.acc-price { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; padding: 18px 20px; border-radius: 14px; background: var(--a-bg2); border: 1px solid var(--a-border); margin-bottom: 16px; }
+.acc-price b { font-size: clamp(28px, 4vw, 38px); font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+.acc-price span { font-size: 14px; color: var(--a-dim); }
+.acc-price small { width: 100%; font-size: 12.5px; color: var(--a-faint); }
+
+.acc-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 18px; }
+.acc-stat { padding: 14px 16px; border-radius: 12px; background: var(--a-card2); border: 1px solid var(--a-border); }
+.acc-stat span { display: block; font-size: 12px; color: var(--a-faint); margin-bottom: 6px; }
+.acc-stat b { font-size: 17px; font-weight: 700; }
+/* Հեռախոսում՝ օգտատերերը ամբողջ լայնությամբ, ամսաթվերը կողք կողքի */
+@media (max-width: 560px) {
+  .acc-stats { grid-template-columns: 1fr 1fr; }
+  .acc-stats > .acc-stat:first-child:nth-last-child(3) { grid-column: 1 / -1; }
+  .acc-stat { padding: 12px 14px; }
+  .acc-stat b { font-size: 15px; }
+}
+
+.acc-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.acc-chip { font-size: 13px; padding: 6px 12px; border-radius: 100px; background: rgba(59,130,246,.14); border: 1px solid rgba(59,130,246,.3); color: #bfdbfe; }
+
+.acc-block { padding-top: 16px; margin-top: 16px; border-top: 1px solid var(--a-border); }
+.acc-block h3 { font-size: 13px; font-weight: 700; color: var(--a-dim); margin: 0 0 8px; }
+.acc-block p { font-size: 14.5px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: break-word; margin: 0; }
+
+/* Ժամկետի առաջընթացը */
+.acc-period { margin-bottom: 18px; }
+.acc-period-row { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; color: var(--a-dim); margin-bottom: 8px; }
+.acc-period-row b { color: var(--a-text); font-weight: 700; }
+.acc-bar { height: 8px; border-radius: 100px; background: var(--a-bg2); overflow: hidden; }
+.acc-bar i { display: block; height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--a-blue), var(--a-cyan)); transition: width .8s cubic-bezier(.22,.68,0,1.2); }
+
+/* Կարգավիճակի պիտակ */
+.acc-status { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; font-weight: 700; padding: 5px 12px; border-radius: 100px; white-space: nowrap; }
+.acc-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.acc-status-active { background: rgba(52,211,153,.14); color: var(--a-green); }
+.acc-status-pending { background: rgba(253,205,10,.13); color: #fde68a; }
+.acc-status-suspended { background: rgba(239,68,68,.14); color: #fca5a5; }
+.acc-status-expired { background: rgba(148,163,184,.16); color: var(--a-dim); }
+
+/* Դատարկ վիճակ */
+.acc-empty { text-align: center; padding: 34px 20px; }
+.acc-empty-icon { width: 64px; height: 64px; margin: 0 auto 16px; border-radius: 18px; display: flex; align-items: center; justify-content: center; background: rgba(253,205,10,.1); color: #fde68a; }
+.acc-empty h3 { font-size: 19px; font-weight: 800; margin: 0 0 8px; }
+.acc-empty p { font-size: 14.5px; color: var(--a-dim); line-height: 1.65; max-width: 420px; margin: 0 auto; }
+
+/* Տվյալների ցուցակ */
+.acc-dl { display: grid; gap: 12px; margin: 0; }
+.acc-dl div { display: grid; gap: 2px; }
+.acc-dl dt { font-size: 12px; color: var(--a-faint); }
+.acc-dl dd { margin: 0; font-size: 14.5px; font-weight: 600; overflow-wrap: anywhere; }
+.acc-note { font-size: 12.5px; color: var(--a-faint); margin-top: 14px; line-height: 1.5; }
+
+.acc-contact a { display: flex; align-items: center; gap: 10px; padding: 11px 13px; border-radius: 12px; background: var(--a-bg2); border: 1px solid var(--a-border); color: var(--a-text); text-decoration: none; font-size: 14px; font-weight: 600; margin-top: 8px; transition: border-color .15s; overflow-wrap: anywhere; }
+.acc-contact a:hover { border-color: var(--a-blue); }
+
+.acc-fade { animation: accIn .5s cubic-bezier(.22,.68,0,1.2) both; }
+@keyframes accIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .acc-fade { animation: none; } .acc-bar i { transition: none; } }

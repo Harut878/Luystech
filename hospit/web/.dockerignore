@@ -1,0 +1,10 @@
+node_modules
+.next
+.vercel
+.git
+*.tsbuildinfo
+npm-debug.log*
+# secrets are passed at build/run time, never copied into the image
+.env
+.env.*
+!.env.local.example

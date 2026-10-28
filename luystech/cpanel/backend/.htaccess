@@ -1,0 +1,43 @@
+# ═══════════════════════════════════════════════════════════
+# LuysTech — public_html/.htaccess (Apache / cPanel)
+# ═══════════════════════════════════════════════════════════
+
+Options -Indexes
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
+# ── HTTPS-ի պարտադրում (միացրեք SSL-ը տեղադրելուց հետո՝ հեռացնելով # նշանները) ──
+# RewriteEngine On
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ── Անվտանգության header-ներ ──
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data: blob: https://www.google.com https://maps.google.com https://maps.gstatic.com https://*.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src 'self' https://www.google.com https://maps.google.com https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com; media-src 'self' https: blob:; form-action 'self'"
+  # HSTS՝ միայն HTTPS-ով աշխատելուց հետո
+  # Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains"
+
+  # Next.js-ի ֆայլերը փոխվում են ամեն build-ին (անունում hash կա) — երկար cache
+  <FilesMatch "\.(js|css|woff2?)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  # HTML-ը միշտ թարմ
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+# ── Ծառայողական ֆայլերը բրաուզերից հասանելի չեն ──
+<FilesMatch "\.(sql|md|log|sh|bak|ini|env)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>

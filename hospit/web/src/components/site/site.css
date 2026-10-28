@@ -1,0 +1,435 @@
+/* ═══════ HospIT — public site theme + motion (scoped under .hp-root) ═══════ */
+
+.hp-root {
+  --accent:        oklch(62% 0.18 212);
+  --accent-mid:    oklch(55% 0.18 212);
+  --accent-glow:   oklch(62% 0.18 212 / 18%);
+  --accent-glow2:  oklch(62% 0.18 212 / 8%);
+
+  --bg:            #FFFFFF;
+  --bg-alt:        #F5F8FC;
+  --bg-card:       #FFFFFF;
+  --bg-nav:        rgba(255,255,255,0.82);
+
+  --text:          #08182E;
+  --text-2:        #3A5070;
+  --text-muted:    #7A92AC;
+
+  --border:        rgba(8,24,46,0.09);
+  --border-strong: rgba(8,24,46,0.18);
+
+  --shadow-sm:  0 2px 12px rgba(8,24,46,0.06);
+  --shadow-md:  0 8px 32px rgba(8,24,46,0.10);
+  --shadow-lg:  0 24px 64px rgba(8,24,46,0.13);
+
+  --radius-sm:  10px;
+  --radius-md:  16px;
+  --radius-lg:  24px;
+  --radius-xl:  32px;
+
+  --section-spacing: 120px;
+  --t: 0.3s ease;
+
+  font-family: 'Noto Sans', 'Noto Sans Armenian', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background var(--t), color var(--t);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hp-root[data-theme="dark"] {
+  --bg:            #060C16;
+  --bg-alt:        #0C1624;
+  --bg-card:       #0E1A2B;
+  --bg-nav:        rgba(6,12,22,0.85);
+
+  --text:          #E4EDF8;
+  --text-2:        #8AAAC8;
+  --text-muted:    #4A6480;
+
+  --border:        rgba(228,237,248,0.07);
+  --border-strong: rgba(228,237,248,0.14);
+
+  --shadow-sm:  0 2px 12px rgba(0,0,0,0.25);
+  --shadow-md:  0 8px 32px rgba(0,0,0,0.35);
+  --shadow-lg:  0 24px 64px rgba(0,0,0,0.45);
+}
+
+.hp-root *, .hp-root *::before, .hp-root *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ─── SCROLL REVEAL ─────────────────────────────────────────── */
+.hp-root .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s cubic-bezier(.22,.68,0,1.2), transform 0.6s cubic-bezier(.22,.68,0,1.2);
+}
+.hp-root .reveal.shown { opacity: 1; transform: none; }
+.hp-root .fade { opacity: 0; transition: opacity 0.7s ease; }
+.hp-root .fade.shown { opacity: 1; }
+
+/* ─── SCROLL PROGRESS BAR ───────────────────────────────────── */
+.hp-progress {
+  position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 1000;
+  background: linear-gradient(90deg, var(--accent), oklch(70% 0.16 190));
+  transform: scaleX(0); transform-origin: 0 50%;
+}
+
+/* ─── PAGE ENTER ────────────────────────────────────────────── */
+.hp-root .page-enter { animation: pgEnter 0.45s cubic-bezier(.22,.68,0,1.2) forwards; }
+@keyframes pgEnter { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+/* ─── LAYOUT ────────────────────────────────────────────────── */
+/* Web (desktop/tablet)՝ կողքերից 100px հեռավորություն, լայն բովանդակություն */
+.hp-root .container { max-width: 2100px; margin: 0 auto; padding: 0 100px; }
+@media (max-width: 1024px) { .hp-root .container { padding: 0 56px; } }
+@media (max-width: 768px) { .hp-root .container { padding: 0 20px; } }
+
+/* Nav-ը՝ ավելի լայն, որ 7 կետը տեղավորվի */
+.hp-navwrap { max-width: none; margin: 0 auto; padding: 0 40px; }
+@media (max-width: 768px) { .hp-navwrap { padding: 0 20px; } }
+
+/* Գնային փաթեթների grid */
+.hp-root .r-pricing-grid { grid-template-columns: repeat(3,1fr); }
+@media (max-width: 980px) { .hp-root .r-pricing-grid { grid-template-columns: 1fr !important; max-width: 460px; margin-left: auto; margin-right: auto; } }
+
+/* ─── TYPOGRAPHY ────────────────────────────────────────────── */
+.hp-root .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.hp-root .display-title { font-size: clamp(38px, 5.2vw, 64px); font-weight: 800; letter-spacing: -0.04em; line-height: 1.08; color: var(--text); text-wrap: balance; overflow-wrap: break-word; word-break: normal; }
+.hp-root .section-title { font-size: clamp(30px, 3.6vw, 50px); font-weight: 700; letter-spacing: -0.03em; overflow-wrap: break-word; word-break: normal; line-height: 1.1; color: var(--text); text-wrap: balance; }
+.hp-root .body-lg { font-size: 18px; line-height: 1.75; color: var(--text-2); font-weight: 400; }
+.hp-root .body-md { font-size: 16px; line-height: 1.7; color: var(--text-2); }
+.hp-root .hero-title { overflow-wrap: break-word; word-break: normal; hyphens: none; text-wrap: balance; }
+
+/* ─── BUTTONS ───────────────────────────────────────────────── */
+.hp-root .btn { display: inline-flex; align-items: center; gap: 8px; border: none; border-radius: 100px; font-family: inherit; font-weight: 600; cursor: pointer; transition: all 0.22s ease; text-decoration: none; white-space: nowrap; }
+.hp-root .btn-primary { background: var(--accent); color: #fff; padding: 14px 30px; font-size: 15px; }
+.hp-root .btn-primary:hover { background: var(--accent-mid); transform: translateY(-2px); box-shadow: 0 10px 30px var(--accent-glow); }
+.hp-root .btn-ghost { background: transparent; color: var(--text); padding: 13px 29px; font-size: 15px; border: 1.5px solid var(--border-strong); }
+.hp-root .btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-glow2); }
+.hp-root .btn-sm { padding: 10px 22px; font-size: 14px; }
+
+/* ─── CARDS ─────────────────────────────────────────────────── */
+.hp-root .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease; }
+.hp-root .card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.hp-root .divider { height: 1px; background: var(--border); }
+
+/* ─── TILT ──────────────────────────────────────────────────── */
+.hp-root .tilt { transition: transform 0.18s ease; transform-style: preserve-3d; will-change: transform; }
+
+/* ─── FORM INPUTS ───────────────────────────────────────────── */
+.hp-root .input-field { width: 100%; background: var(--bg-alt); border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; font-family: inherit; font-size: 15px; color: var(--text); transition: border-color 0.2s ease, box-shadow 0.2s ease; outline: none; resize: vertical; }
+.hp-root .input-field:focus { border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-glow); }
+.hp-root .input-field::placeholder { color: var(--text-muted); }
+
+/* ─── VIDEO / MEDIA ─────────────────────────────────────────── */
+.hp-root .media-placeholder { background: repeating-linear-gradient(-45deg, var(--bg-alt) 0px, var(--bg-alt) 10px, var(--border) 10px, var(--border) 11px); border-radius: var(--radius-md); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; font-family: monospace; font-size: 11px; color: var(--text-muted); text-align: center; padding: 24px; }
+.hp-root .video-frame { background: var(--bg-alt); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; position: relative; }
+.hp-root .video-play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 64px; height: 64px; background: rgba(255,255,255,0.92); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: var(--shadow-md); transition: all 0.2s ease; border: none; }
+.hp-root .video-play-btn:hover { transform: translate(-50%, -50%) scale(1.1); box-shadow: var(--shadow-lg); }
+
+/* ─── NAV ───────────────────────────────────────────────────── */
+.hp-root .nav-link { font-size: 14px; font-weight: 500; color: var(--text-2); cursor: pointer; padding: 6px 2px; background: none; border: none; font-family: inherit; position: relative; transition: color 0.2s ease; }
+.hp-root .nav-link::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1.5px; background: var(--accent); transform: scaleX(0); transition: transform 0.2s ease; }
+.hp-root .nav-link:hover, .hp-root .nav-link.active { color: var(--text); }
+.hp-root .nav-link.active::after, .hp-root .nav-link:hover::after { transform: scaleX(1); }
+
+/* ─── ICONS / CHIPS / STATS ─────────────────────────────────── */
+.hp-root .feature-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--accent-glow); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--accent); }
+.hp-root .value-chip { display: flex; align-items: center; gap: 14px; padding: 18px 22px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 15px; font-weight: 500; color: var(--text); transition: all 0.2s ease; }
+.hp-root .value-chip:hover { border-color: var(--accent); background: var(--accent-glow2); }
+.hp-root .stat-num { font-size: 48px; font-weight: 800; letter-spacing: -0.04em; color: var(--text); line-height: 1; }
+.hp-root .stat-label { font-size: 14px; font-weight: 500; color: var(--text-2); margin-top: 6px; }
+
+/* ─── GRID SAFETY ───────────────────────────────────────────── */
+/* Grid/flex տարրերի կանխադրված min-width:auto-ն թույլ չի տալիս սեղմվել,
+   ինչի պատճառով երկար հայերեն բառերը լայնացնում էին սյունը։ */
+.hp-root .r-feat-grid > *, .hp-root .r-svc-grid > *, .hp-root .r-story-grid > *,
+.hp-root .r-values-grid > *, .hp-root .r-mv-grid > *, .hp-root .r-adv-grid > *,
+.hp-root .r-partner-val-grid > *, .hp-root .r-chips-grid > *, .hp-root .r-integ-grid > *,
+.hp-root .r-stats-grid > *, .hp-root .r-logo-grid > *, .hp-root .r-pricing-grid > *,
+.hp-root .r-cust-grid > *, .hp-root .r-cust-feats > *, .hp-root .r-contact-grid > *,
+.hp-root .r-preview-grid > *, .hp-root .r-why-grid > *, .hp-root .r-vid-grid > *,
+.hp-root .r-form-grid > *, .hp-root .r-footer-grid > * { min-width: 0; }
+
+/* Շատ երկար հայերեն բառերը քարտերի ներսում՝ փոխադրվեն, ոչ թե դուրս գան */
+.hp-root .card, .hp-root .value-chip, .hp-root .r-values-grid div,
+.hp-root .r-adv-grid div, .hp-root .r-partner-val-grid div { overflow-wrap: break-word; }
+
+/* ─── ԻՆՏԵՐԱԿՏԻՎ ԺԱՄԱՆԱԿԱԳՐՈՒԹՅՈՒՆ («Մեր պատմությունը») ────── */
+.hp-root .hp-tlx { max-width: 980px; margin: 0 auto; }
+
+/* Տարիների ուղին */
+.hp-root .hp-tlx-track {
+  position: relative; display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 8px; padding: 6px 4px 4px; margin-bottom: 34px;
+}
+.hp-root .hp-tlx-rail, .hp-root .hp-tlx-rail-fill {
+  position: absolute; top: 13px; left: 4px; height: 2px; border-radius: 2px; pointer-events: none;
+}
+.hp-root .hp-tlx-rail { right: 4px; background: var(--border-strong); opacity: .55; }
+.hp-root .hp-tlx-rail-fill {
+  background: linear-gradient(90deg, var(--accent), oklch(70% 0.16 190));
+  transition: width .45s cubic-bezier(.22,.68,0,1.2);
+  max-width: calc(100% - 8px);
+}
+.hp-root .hp-tlx-node {
+  position: relative; z-index: 1; flex: 1 1 0; min-width: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 9px;
+  background: none; border: none; cursor: pointer; font-family: inherit; padding: 0;
+}
+.hp-root .hp-tlx-dot {
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--border-strong);
+  transition: transform .3s cubic-bezier(.22,.68,0,1.2), background .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.hp-root .hp-tlx-node.done .hp-tlx-dot { background: var(--accent); border-color: var(--accent); }
+.hp-root .hp-tlx-node.on .hp-tlx-dot {
+  background: var(--accent); border-color: var(--accent);
+  transform: scale(1.45); box-shadow: 0 0 0 6px var(--accent-glow);
+}
+.hp-root .hp-tlx-node:hover .hp-tlx-dot { border-color: var(--accent); transform: scale(1.2); }
+.hp-root .hp-tlx-year {
+  font-size: 13px; font-weight: 700; color: var(--text-muted); white-space: nowrap;
+  transition: color .25s ease, transform .25s ease;
+}
+.hp-root .hp-tlx-node.on .hp-tlx-year { color: var(--accent); transform: translateY(2px) scale(1.06); }
+.hp-root .hp-tlx-node:hover .hp-tlx-year { color: var(--text); }
+
+/* Բովանդակության վահանակ */
+.hp-root .hp-tlx-panel {
+  position: relative; overflow: hidden;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px;
+  padding: 34px 36px 22px; box-shadow: var(--shadow-md);
+  animation: tlxIn .5s cubic-bezier(.22,.68,0,1.2) both;
+}
+@keyframes tlxIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.hp-root .hp-tlx-ghost {
+  position: absolute; top: -18px; right: 18px; pointer-events: none; user-select: none;
+  font-size: clamp(72px, 11vw, 130px); font-weight: 800; letter-spacing: -0.04em;
+  color: var(--accent); opacity: .07; line-height: 1;
+}
+.hp-root .hp-tlx-body { position: relative; }
+.hp-root .hp-tlx-badge {
+  display: inline-block; margin-bottom: 12px; padding: 4px 14px; border-radius: 100px;
+  background: var(--accent-glow); color: var(--accent); font-size: 12.5px; font-weight: 800;
+}
+.hp-root .hp-tlx-title {
+  font-size: clamp(19px, 2.4vw, 24px); font-weight: 700; color: var(--text);
+  line-height: 1.3; margin-bottom: 10px; overflow-wrap: break-word;
+}
+.hp-root .hp-tlx-desc { font-size: 15px; line-height: 1.7; color: var(--text-2); overflow-wrap: break-word; }
+.hp-root .hp-tlx-nav {
+  position: relative; display: flex; align-items: center; justify-content: flex-end; gap: 12px;
+  margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border);
+}
+.hp-root .hp-tlx-count { font-size: 13px; font-weight: 600; color: var(--text-muted); min-width: 46px; text-align: center; }
+.hp-root .hp-tlx-arrow {
+  width: 38px; height: 38px; border-radius: 50%; cursor: pointer;
+  background: var(--bg-alt); border: 1px solid var(--border); color: var(--text-2);
+  display: flex; align-items: center; justify-content: center; transition: all .2s ease;
+}
+.hp-root .hp-tlx-arrow:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-2px); }
+
+@media (max-width: 768px) {
+  .hp-root .hp-tlx-track {
+    justify-content: flex-start; overflow-x: auto; scroll-snap-type: x proximity;
+    padding-bottom: 8px; -webkit-overflow-scrolling: touch;
+  }
+  .hp-root .hp-tlx-track::-webkit-scrollbar { height: 0; }
+  .hp-root .hp-tlx-node { flex: 0 0 auto; min-width: 92px; scroll-snap-align: center; }
+  .hp-root .hp-tlx-rail, .hp-root .hp-tlx-rail-fill { display: none; }
+  .hp-root .hp-tlx-panel { padding: 26px 22px 18px; }
+  .hp-root .hp-tlx-ghost { font-size: 64px; top: -8px; right: 10px; }
+  .hp-root .hp-tlx-nav { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hp-root .hp-tlx-panel { animation: none; }
+  .hp-root .hp-tlx-dot, .hp-root .hp-tlx-year, .hp-root .hp-tlx-rail-fill { transition: none; }
+}
+
+/* ─── «ՄԵԶ ՎՍՏԱՀՈՒՄ ԵՆ» — սահող շերտ (ձախից աջ) ─────────────── */
+.hp-root .hp-clients-strip .logo-marquee { animation-direction: reverse; }
+.hp-root .hp-client-item {
+  flex-shrink: 0; width: 200px;
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+.hp-root .hp-client-logo {
+  height: 92px; width: 100%;
+  display: flex; align-items: center; justify-content: center;
+}
+.hp-root .hp-client-logo img {
+  max-height: 84px; max-width: 190px; width: auto; height: auto;
+  object-fit: contain; display: block;
+}
+.hp-root .hp-client-name {
+  font-size: 13.5px; font-weight: 600; color: var(--text-2);
+  text-align: center; line-height: 1.4; overflow-wrap: break-word;
+}
+@media (max-width: 768px) {
+  .hp-root .hp-client-item { width: 150px; }
+  .hp-root .hp-client-logo { height: 68px; }
+  .hp-root .hp-client-logo img { max-height: 62px; max-width: 140px; }
+  .hp-root .hp-client-name { font-size: 12.5px; }
+  .hp-root .hp-clients-strip .logo-marquee { gap: 44px !important; }
+}
+
+/* ─── ECOSYSTEM NETWORK LABELS ──────────────────────────────── */
+/* SVG-ը viewBox-ով փոքրանում է էկրանի հետ, ուստի տառաչափը մեծացնում ենք
+   փոքր էկրաններին՝ որ իրական չափը մնա ~13-15px (հայերեն բառերը երկար են) */
+.hp-root .hp-net-label { font-size: 14px; }
+@media (max-width: 820px) { .hp-root .hp-net-label { font-size: 16px; } }
+@media (max-width: 620px) { .hp-root .hp-net-label { font-size: 21px; } }
+@media (max-width: 480px) { .hp-root .hp-net-label { font-size: 27px; } }
+@media (max-width: 380px) { .hp-root .hp-net-label { font-size: 33px; } }
+
+/* ─── INTEGRATIONS ──────────────────────────────────────────── */
+.hp-root .r-integ-grid { grid-template-columns: repeat(3,1fr); }
+@media (max-width: 1024px) { .hp-root .r-integ-grid { grid-template-columns: repeat(2,1fr) !important; } }
+@media (max-width: 700px) { .hp-root .r-integ-grid { grid-template-columns: 1fr !important; } }
+
+/* ─── PRICING CALCULATOR ────────────────────────────────────── */
+.hp-root .hp-plan-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--border-strong); }
+.hp-root .r-cust-grid { grid-template-columns: 2fr 1fr; }
+.hp-root .r-cust-feats { grid-template-columns: 1fr 1fr; }
+@media (max-width: 980px) {
+  .hp-root .r-cust-grid { grid-template-columns: 1fr !important; }
+  .hp-root .r-cust-grid > div { position: static !important; }
+}
+@media (max-width: 560px) { .hp-root .r-cust-feats { grid-template-columns: 1fr !important; } }
+/* Լրացուցիչ մոդուլների տողերը՝ նեղ էկրանին անվանումը և գինը մեկը մյուսի տակ */
+@media (max-width: 620px) {
+  .hp-root .hp-addon-inner { flex-direction: column !important; align-items: flex-start !important; gap: 6px !important; }
+  .hp-root .hp-addon-left { width: 100%; }
+}
+
+/* ─── HERO BG ORBS ──────────────────────────────────────────── */
+.hp-root .hero-bg { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.hp-root .hero-orb { position: absolute; border-radius: 50%; filter: blur(80px); animation: orbFloat 8s ease-in-out infinite alternate; }
+@keyframes orbFloat { from { transform: translate(0,0) scale(1); } to { transform: translate(30px,-20px) scale(1.08); } }
+
+/* ─── FLYING LOGO ───────────────────────────────────────────── */
+.hp-root .flying-logo-stage { position: relative; width: 100%; aspect-ratio: 1/1; max-width: 480px; margin: 0 auto; display: flex; align-items: center; justify-content: center; }
+.hp-root .fl-glow { position: absolute; width: 70%; height: 70%; border-radius: 50%; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 65%); filter: blur(20px); animation: flGlow 5s ease-in-out infinite; }
+@keyframes flGlow { 0%,100% { opacity: 0.6; transform: scale(0.9); } 50% { opacity: 1; transform: scale(1.1); } }
+.hp-root .fl-orbit { position: absolute; border-radius: 50%; border: 1.5px dashed var(--border-strong); opacity: 0.4; }
+.hp-root .fl-orbit-1 { width: 78%; height: 78%; animation: flSpin 22s linear infinite; }
+.hp-root .fl-orbit-2 { width: 96%; height: 96%; border-style: dotted; animation: flSpin 30s linear infinite reverse; }
+@keyframes flSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.hp-root .fl-logo-wrap { position: relative; width: 56%; z-index: 2; animation: flFloat 6s ease-in-out infinite; }
+.hp-root .fl-logo { width: 100%; height: auto; display: block; animation: flSway 9s ease-in-out infinite; filter: drop-shadow(0 18px 36px var(--accent-glow)); transform-origin: center; }
+@keyframes flFloat { 0%,100% { transform: translateY(-14px); } 50% { transform: translateY(14px); } }
+@keyframes flSway { 0%,100% { transform: rotate(-6deg) scale(1); } 50% { transform: rotate(6deg) scale(1.04); } }
+.hp-root .fl-shadow { position: absolute; bottom: 8%; width: 38%; height: 22px; border-radius: 50%; background: radial-gradient(ellipse, rgba(0,0,0,0.22) 0%, transparent 70%); filter: blur(4px); animation: flShadow 6s ease-in-out infinite; z-index: 1; }
+.hp-root[data-theme="dark"] .fl-shadow { background: radial-gradient(ellipse, rgba(0,0,0,0.5) 0%, transparent 70%); }
+@keyframes flShadow { 0%,100% { transform: scale(0.82); opacity: 0.5; } 50% { transform: scale(1.1); opacity: 0.85; } }
+.hp-root .fl-particle { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); opacity: 0.5; }
+.hp-root .fl-particle-0 { top: 14%; left: 22%; animation: flDrift 7s ease-in-out infinite; }
+.hp-root .fl-particle-1 { top: 26%; right: 16%; width: 6px; height: 6px; animation: flDrift 9s ease-in-out infinite 0.6s; }
+.hp-root .fl-particle-2 { bottom: 24%; left: 14%; width: 5px; height: 5px; animation: flDrift 8s ease-in-out infinite 1.2s; }
+.hp-root .fl-particle-3 { bottom: 18%; right: 22%; animation: flDrift 6.5s ease-in-out infinite 0.3s; }
+.hp-root .fl-particle-4 { top: 46%; left: 6%; width: 5px; height: 5px; animation: flDrift 10s ease-in-out infinite 0.9s; }
+.hp-root .fl-particle-5 { top: 40%; right: 7%; width: 7px; height: 7px; animation: flDrift 7.5s ease-in-out infinite 1.5s; }
+@keyframes flDrift { 0%,100% { transform: translate(0,0); opacity: 0.25; } 50% { transform: translate(0,-18px); opacity: 0.7; } }
+
+/* ─── PARTNER MARQUEE ───────────────────────────────────────── */
+.hp-root .logo-marquee-wrap { overflow: hidden; mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); }
+.hp-root .logo-marquee { display: flex; gap: 64px; animation: marquee 28s linear infinite; width: max-content; }
+.hp-root .logo-marquee:hover { animation-play-state: paused; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+/* Գործընկերների շերտը՝ սահում է ձախից աջ */
+.hp-root .hp-partners-strip .logo-marquee { animation-direction: reverse; }
+.hp-root .hp-partners-strip img { height: 56px; }
+@media (max-width: 768px) { .hp-root .hp-partners-strip img { height: 42px; } .hp-root .hp-partners-strip .logo-marquee { gap: 40px !important; } }
+.hp-root .partners-bg-logo { opacity: 0.08; }
+
+/* ─── SCROLL TOP BTN ────────────────────────────────────────── */
+.hp-scrolltop { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px var(--accent-glow); transition: all 0.3s cubic-bezier(.22,.68,0,1.2); z-index: 800; opacity: 0; transform: translateY(16px) scale(0.8); pointer-events: none; }
+.hp-scrolltop.visible { opacity: 1; transform: translateY(0) scale(1); pointer-events: all; }
+.hp-scrolltop:hover { transform: translateY(-3px) scale(1.1); box-shadow: 0 8px 28px var(--accent-glow); }
+@media (max-width: 768px) { .hp-scrolltop { bottom: 20px; right: 20px; } }
+
+/* ─── ECG ───────────────────────────────────────────────────── */
+.hp-root .ecg-path { stroke-dasharray: 1800; stroke-dashoffset: 1800; animation: ecgDraw 3s linear infinite; }
+@keyframes ecgDraw { 0% { stroke-dashoffset: 1800; opacity: 1; } 80% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes pulseRing { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(2.5); opacity: 0; } }
+
+/* ─── RESPONSIVE GRID HELPERS ───────────────────────────────── */
+@media (max-width: 1024px) {
+  .hp-root .r-feat-grid { grid-template-columns: repeat(2,1fr) !important; }
+  .hp-root .r-values-grid { grid-template-columns: repeat(3,1fr) !important; }
+}
+/* «Ինչու HospIT» կետերը՝ մեկ սյունով, քանի դեռ սյունը նեղ է (հայերեն տեքստը 4-5 տող էր դառնում) */
+@media (max-width: 1200px) { .hp-root .r-chips-grid { grid-template-columns: 1fr !important; } }
+@media (max-width: 900px) {
+  .hp-root .r-hero-grid, .hp-root .r-preview-grid, .hp-root .r-why-grid, .hp-root .r-story-grid,
+  .hp-root .r-contact-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+  .hp-root .r-mv-grid, .hp-root .r-adv-grid, .hp-root .r-partner-val-grid { grid-template-columns: 1fr !important; }
+  .hp-root .r-vid-grid { grid-template-columns: repeat(2,1fr) !important; }
+  .hp-root .hero-logo-desktop { display: none !important; }
+  .hp-root .preview-mockup-desktop { display: none !important; }
+  .hp-root .preview-mockup-mobile { display: block !important; }
+  /* Մոբայլ hero՝ ամեն ինչ կենտրոնացված ու հավասարակշռված */
+  .hp-root .hero-head { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+  .hp-root .hero-head-text { width: 100%; }
+  .hp-root .hero-logo-mobile { display: block !important; width: min(66vw, 300px); margin: 16px auto 4px; }
+  .hp-root .hero-logo-mobile .flying-logo-stage { max-width: 300px; }
+  .hp-root .r-hero-section .r-hero-grid > div:first-child { text-align: center; }
+  .hp-root .r-hero-section .r-hero-grid > div:first-child > p { margin-left: auto; margin-right: auto; }
+  .hp-root .r-hero-section .r-hero-grid > div:first-child > .reveal { justify-content: center; }
+  .hp-root .r-hero-section .hero-stats { justify-content: center; max-width: 420px; margin-left: auto; margin-right: auto; }
+  /* 2-սյունանոց բաժինների ՎԵՐՆԱԳՐԵՐԸ կենտրոն, բայց chip-երն ու կետերը՝ ձախ (հավասար շարք) */
+  .hp-root .r-preview-grid > div > .eyebrow, .hp-root .r-why-grid > div > .eyebrow, .hp-root .r-story-grid > div > .eyebrow,
+  .hp-root .r-preview-grid > div > .section-title, .hp-root .r-why-grid > div > .section-title, .hp-root .r-story-grid > div > .section-title { text-align: center; }
+  /* Why-ի value-chip-երը՝ ձախ հավասարեցված (պտիչկաները մեկ գծի վրա) */
+  .hp-root .r-chips-grid .value-chip { justify-content: flex-start; text-align: left; }
+  /* Connected chip-երը՝ իրար հավասար լայնությամբ, դասավորված սյունով */
+  .hp-root .hp-conn-chips { flex-direction: column !important; align-items: stretch !important; gap: 12px !important; max-width: 380px; margin-left: auto; margin-right: auto; }
+  .hp-root .hp-conn-chip { width: 100%; }
+}
+@media (max-width: 768px) {
+  .hp-root section { padding-top: 64px !important; padding-bottom: 64px !important; }
+  .hp-root .r-svc-grid, .hp-root .r-chips-grid, .hp-root .r-vid-grid { grid-template-columns: 1fr !important; }
+  .hp-root .r-stats-grid { grid-template-columns: repeat(2,1fr) !important; }
+  .hp-root .r-logo-grid { grid-template-columns: repeat(2,1fr) !important; }
+  .hp-root .r-values-grid { grid-template-columns: repeat(2,1fr) !important; }
+  .hp-root .r-footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
+  .hp-root .r-cta-banner { flex-direction: column !important; text-align: center !important; padding: 48px 32px !important; }
+  .hp-root .r-cta-banner > div:last-child { width: 100% !important; }
+  .hp-root .r-cta-banner button { flex: 1; justify-content: center; }
+  /* Նեղ էկրաններին կոճակները՝ մեկը մյուսի տակ (հայերեն բառերը երկար են) */
+  .hp-root .r-cta-banner > div:last-child { flex-direction: column !important; }
+  .hp-root .r-cta-banner button { width: 100% !important; flex: none !important; }
+  .hp-root .r-hero-section { min-height: auto !important; padding-top: 100px !important; padding-bottom: 48px !important; }
+  /* Համեմատության աղյուսակը՝ առանց հորիզոնական scroll-ի (սյուները սեղմվում են) */
+  .hp-root .r-comparison-wrap { overflow-x: visible !important; }
+  .hp-root .hp-cmp-row { grid-template-columns: 1fr 64px 64px !important; padding-left: 16px !important; padding-right: 16px !important; }
+  .hp-root .hp-cmp-row > div { min-width: 0; overflow-wrap: break-word; }
+  .hp-root .partners-bg-logo { opacity: 0.6; }
+  
+}
+@media (max-width: 480px) {
+  .hp-root .r-feat-grid, .hp-root .r-stats-grid, .hp-root .r-footer-grid { grid-template-columns: 1fr !important; }
+  .hp-root .r-values-grid { grid-template-columns: 1fr 1fr !important; }
+  .hp-root .r-form-grid { grid-template-columns: 1fr !important; }
+}
+
+/* Hero-ի թվերը՝ միշտ մեկ շարքում, ԱՌԱՆՑ scroll-ի (սեղմվում են՝ ոչ թե ոլորվում) */
+.hp-root .hero-stats { display: flex !important; flex-direction: row !important; flex-wrap: nowrap !important; gap: 24px !important; overflow: visible !important; }
+.hp-root .hero-stats > div { flex: 1 1 0; min-width: 0; }
+@media (max-width: 480px) { .hp-root .hero-stats { gap: 12px !important; } }
+.hp-root .hero-stats .stat-num { font-size: clamp(22px, 5vw, 32px) !important; }
+/* Հայերեն երկար բառերը (օր. «արդյունավետություն») չպիտի դուրս գան սյունից */
+.hp-root .hero-stats .stat-label { font-size: 12.5px; line-height: 1.35; overflow-wrap: anywhere; }
+.hp-root .hero-logo-mobile { display: none; }
+.hp-root .preview-mockup-mobile { display: none; }
+.hp-root .r-hero-grid > *, .hp-root .r-preview-grid > *, .hp-root .hero-head-text { min-width: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-root .fl-glow, .hp-root .fl-orbit, .hp-root .fl-logo-wrap, .hp-root .fl-logo, .hp-root .fl-shadow, .hp-root .fl-particle,
+  .hp-root .logo-marquee, .hp-root .hero-orb, .hp-root .ecg-path { animation: none !important; }
+  .hp-root .reveal { transition: none !important; opacity: 1 !important; transform: none !important; }
+}
+

@@ -1,0 +1,920 @@
+{
+ "texts": {
+  "am": {
+   "bc": {
+    "desc": "Business Control-ն ընդգրկում է ընկերության ամբողջ աշխատանքը՝ պատվերից մինչև վճարում: Յուրաքանչյուր մոդուլ ունի իր դերը, իսկ միասին նրանք աշխատում են որպես մեկ ամբողջություն։",
+    "title": "Business Control (BC)",
+    "kicker": "Արտադրանք"
+   },
+   "nav": {
+    "cta": "Պատվիրել զանգ",
+    "why": "Ինչու BC",
+    "about": "Մեր մասին",
+    "trust": "Վստահություն",
+    "contact": "Կապ",
+    "product": "Business Control",
+    "industries": "Ոլորտներ"
+   },
+   "why": {
+    "title": "Ինչու՞ ընտրել Business Control",
+    "kicker": "Առավելություններ"
+   },
+   "demo": {
+    "title": "Ձեր ընկերության ուժեղ կողմը՝ մեկ համակարգում",
+    "subtitle": "Բացահայտեք, թե ինչպես է Business Control-ը փոխում ձեր աշխատանքային առօրյան",
+    "ctaPrimary": "",
+    "ctaSecondary": "Պատվիրել զանգ"
+   },
+   "hero": {
+    "badge": "Բիզնեսի ավտոմատացման հարթակ",
+    "title": "Բոլոր գործընթացները` մեկ համակարգում",
+    "subtitle": "LuysTech-ն օգնում է բիզնեսներին կառավարել աշխատանքն ավելի պարզ և արագ",
+    "ctaPrimary": "",
+    "ctaSecondary": "Պատվիրել զանգ"
+   },
+   "about": {
+    "lead": "Մենք ստեղծում ենք լուծումներ, որոնք պարզեցնում են ամենօրյա աշխատանքը` թույլ տալով կառավարել բիզնեսը մի քանի հպումով",
+    "title": "Մշակում ենք հեշտ կառավարում",
+    "kicker": "LuysTech-ի մասին",
+    "whoText": "LuysTech-ը ստեղծում է հարթակ, որը միացնում է բիզնեսի բոլոր փուլերը` պատվերից մինչև վճարում",
+    "whatText": "Մենք մշակում ենք Business Control (BC) ERP ավտոմատացման հարթակը, որով ընկերության աշխատանքը դառնում է հասկանալի և կառավարելի",
+    "whoLabel": "Մեր մասին",
+    "whatLabel": "Ի՞նչ ենք անում",
+    "visionText": "Ձևավորել տարածաշրջանում ընկերությունների կառավարման նոր չափանիշ",
+    "missionText": "Դարձնել ժամանակակից տեխնոլոգիան հասանելի յուրաքանչյուր ընկերության համար",
+    "visionLabel": "Մեր տեսլականը",
+    "missionLabel": "Մեր առաքելությունը"
+   },
+   "trust": {
+    "solution": "Լուծում",
+    "challenge": "Մարտահրավեր",
+    "clientsTitle": "Մեզ վստահում են",
+    "successTitle": "Հաջողության պատմություններ",
+    "clientsKicker": "Մեր հաճախորդները",
+    "partnersTitle": "Արտաքին համակարգերի ինտեգրացիա",
+    "successKicker": "Դեպքերի ուսումնասիրություն",
+    "partnersKicker": "Ինտեգրացիաներ"
+   },
+   "common": {
+    "close": "Փակել",
+    "visit": "Այցելել կայք",
+    "results": "Արդյունքներ",
+    "viewStory": "Դիտել պատմությունը",
+    "watchVideo": "Դիտել վիդեոն"
+   },
+   "footer": {
+    "desc": "Բիզնեսի ավտոմատացման լուծումներ Business Control հարթակի միջոցով։",
+    "rights": "Բոլոր իրավունքները պաշտպանված են։",
+    "langTitle": "Լեզու",
+    "quickTitle": "Արագ հղումներ"
+   },
+   "contact": {
+    "email": "Էլ. փոստ",
+    "phone": "Հեռախոս",
+    "title": "Սկսեք մեկ զանգից",
+    "kicker": "Կապ",
+    "person": "Կոնտակտային անձ",
+    "submit": "Ուղարկել հարցումը",
+    "company": "Ընկերության անվանում",
+    "mapText": "Քարտեզ",
+    "message": "Հաղորդագրություն",
+    "success": "Շնորհակալություն։ Մենք շուտով կկապվենք ձեզ հետ։",
+    "emailLabel": "Էլ. փոստ",
+    "hoursLabel": "Աշխատանքային ժամեր",
+    "phoneLabel": "Հեռախոս",
+    "addressLabel": "Հասցե"
+   },
+   "industries": {
+    "title": "Ստեղծված յուրաքանչյուր ոլորտի համար",
+    "kicker": "Ոլորտներ"
+   }
+  },
+  "en": {
+   "bc": {
+    "desc": "Business Control covers your company’s entire workflow, from order to payment. Each module has its own role, and together they work as one system.",
+    "title": "Business Control (BC)",
+    "kicker": "Product"
+   },
+   "nav": {
+    "cta": "Request a Call",
+    "why": "Why BC",
+    "about": "About Us",
+    "trust": "Trust",
+    "contact": "Contact",
+    "product": "Business Control",
+    "industries": "Industries"
+   },
+   "why": {
+    "title": "Why choose Business Control",
+    "kicker": "Benefits"
+   },
+   "demo": {
+    "title": "Put Your Company’s Strong Side in One System",
+    "subtitle": "See how Business Control transforms your daily routine",
+    "ctaPrimary": "",
+    "ctaSecondary": "Request a Call"
+   },
+   "hero": {
+    "badge": "Business Automation Platform",
+    "title": "Every Business Process in One System",
+    "subtitle": "LuysTech makes business management simpler and faster",
+    "ctaPrimary": "Request Demo",
+    "ctaSecondary": "Request a Call"
+   },
+   "about": {
+    "lead": "Our solutions streamline everyday work and put business management just a few clicks away",
+    "title": "We develop tools that make management easy",
+    "kicker": "About LuysTech",
+    "whoText": "LuysTech develops a platform that links the whole business flow, from the first order to the final payment\n",
+    "whatText": "We develop Business Control (BC), an ERP and automation platform that makes a company’s operations transparent and manageable",
+    "whoLabel": "About Us",
+    "whatLabel": "What we do",
+    "visionText": "To become the leading digital transformation partner for businesses across the region",
+    "missionText": "To deliver reliable tools that reduce manual work and eliminate operational errors",
+    "visionLabel": "Our vision",
+    "missionLabel": "Our mission"
+   },
+   "trust": {
+    "solution": "Solution",
+    "challenge": "Challenge",
+    "clientsTitle": "Trusted by Leading Businesses",
+    "successTitle": "Success Stories",
+    "clientsKicker": "Our Clients",
+    "partnersTitle": "External system integrations",
+    "successKicker": "Case Studies",
+    "partnersKicker": "Integrations"
+   },
+   "common": {
+    "close": "Close",
+    "visit": "Visit website",
+    "results": "Results",
+    "viewStory": "View story",
+    "watchVideo": "Watch video"
+   },
+   "footer": {
+    "desc": "Business automation powered by Business Control",
+    "rights": "All rights reserved.",
+    "langTitle": "Language",
+    "quickTitle": "Quick Links"
+   },
+   "contact": {
+    "email": "Email",
+    "phone": "Phone Number",
+    "title": "Start with one call",
+    "kicker": "Contact",
+    "person": "Contact Person",
+    "submit": "Send Request",
+    "company": "Company Name",
+    "mapText": "Map placeholder",
+    "message": "Message",
+    "success": "Thank you! We will get back to you shortly.",
+    "emailLabel": "Email",
+    "hoursLabel": "Working Hours",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address"
+   },
+   "industries": {
+    "title": "Built for every industry",
+    "kicker": "Industries"
+   }
+  },
+  "ru": {
+   "bc": {
+    "desc": "Business Control охватывает весь рабочий процесс компании: от заказа до оплаты. Каждый модуль выполняет свою задачу, а вместе они образуют единую систему.",
+    "title": "Business Control (BC)",
+    "kicker": "Продукт"
+   },
+   "nav": {
+    "cta": "Заказать звонок",
+    "why": "Почему BC",
+    "about": "О нас",
+    "trust": "Доверие",
+    "contact": "Контакты",
+    "product": "Business Control",
+    "industries": "Отрасли"
+   },
+   "why": {
+    "title": "Почему стоит выбрать Business Control",
+    "kicker": "Преимущества"
+   },
+   "demo": {
+    "title": "Сильная сторона компании — в одной системе",
+    "subtitle": "Узнайте, как Business Control меняет вашу ежедневную работу ",
+    "ctaPrimary": "",
+    "ctaSecondary": "Заказать звонок "
+   },
+   "hero": {
+    "badge": "Платформа автоматизации бизнеса",
+    "title": "Все бизнес-процессы в одной системе",
+    "subtitle": "LuysTech делает управление бизнесом проще и быстрее",
+    "ctaPrimary": "Запросить демо",
+    "ctaSecondary": "Заказать звонок"
+   },
+   "about": {
+    "lead": "Мы создаём решения, которые упрощают повседневную работу и позволяют управлять бизнесом в несколько кликов",
+    "title": "Мы разрабатываем инструменты для простого управления",
+    "kicker": "О LuysTech",
+    "whoText": "LuysTech разрабатывает платформу, связывающую все этапы работы — от заказа до оплаты.",
+    "whatText": "Мы разрабатываем ERP-платформу Business Control (BC), которая делает работу компании прозрачной и управляемой",
+    "whoLabel": "О нас",
+    "whatLabel": "Что мы делаем",
+    "visionText": "Стать ведущим партнёром по цифровой трансформации для бизнеса в регионе",
+    "missionText": "Предоставлять надёжные инструменты, сокращающие ручной труд и устраняющие ошибки",
+    "visionLabel": "Наше видение",
+    "missionLabel": "Наша миссия"
+   },
+   "trust": {
+    "solution": "Решение",
+    "challenge": "Задача",
+    "clientsTitle": "Нам доверяют",
+    "successTitle": "Истории успеха",
+    "clientsKicker": "Наши клиенты",
+    "partnersTitle": "Интеграции с внешними системами",
+    "successKicker": "Кейсы",
+    "partnersKicker": "Интеграции"
+   },
+   "common": {
+    "close": "Закрыть",
+    "visit": "Перейти на сайт",
+    "results": "Результаты",
+    "viewStory": "Смотреть историю",
+    "watchVideo": "Смотреть видео"
+   },
+   "footer": {
+    "desc": "Автоматизация бизнеса на платформе Business Control",
+    "rights": "Все права защищены.",
+    "langTitle": "Язык",
+    "quickTitle": "Быстрые ссылки"
+   },
+   "contact": {
+    "email": "Эл. почта",
+    "phone": "Телефон",
+    "title": "Начните с одного звонка",
+    "kicker": "Контакты",
+    "person": "Контактное лицо",
+    "submit": "Отправить запрос",
+    "company": "Название компании",
+    "mapText": "Карта",
+    "message": "Сообщение",
+    "success": "Спасибо! Мы скоро свяжемся с вами.",
+    "emailLabel": "Эл. почта",
+    "hoursLabel": "Часы работы",
+    "phoneLabel": "Телефон",
+    "addressLabel": "Адрес"
+   },
+   "industries": {
+    "title": "Создано для каждой отрасли",
+    "kicker": "Отрасли"
+   }
+  }
+ },
+ "settings": {
+  "email": "info@luystech.com",
+  "hours": {
+   "am": "Երկ–Ուրբ, 09:00–18:00",
+   "en": "Mon–Fri, 09:00–18:00",
+   "ru": "Пн–Пт, 09:00–18:00"
+  },
+  "phone": "+374 10 000 000",
+  "address": {
+   "am": "Երևան, Հայաստան",
+   "en": "Yerevan, Armenia",
+   "ru": "Ереван, Армения"
+  },
+  "socials": [
+   {
+    "url": "https://www.linkedin.com/company/luystech/home/?viewAsMember=true",
+    "platform": "linkedin"
+   },
+   {
+    "url": "#",
+    "platform": "facebook"
+   },
+   {
+    "url": "https://www.instagram.com/luystech/",
+    "platform": "instagram"
+   }
+  ],
+  "sections": {
+   "bc": true,
+   "demo": true,
+   "about": true,
+   "proof": true,
+   "stats": false,
+   "clients": true,
+   "stories": false,
+   "benefits": true,
+   "partners": true,
+   "industries": true
+  },
+  "map_embed": "https://www.google.com/maps/place/5GR3%2B853,+Yerevan/@40.190774,44.5022302,19z/data=!4m6!3m5!1s0x406abd1a6555ca1f:0x207272c14ae36e4d!8m2!3d40.190774!4d44.5028851!16s%2Fg%2F11ng7d1gmt?entry=tts&g_ep=EgoyMDI2MTAxOC4wIPu8ASoASAFQAw%3D%3D&skid=f4acd9aa-550d-4ea8-b92c-cf319493c90c",
+  "body_weight": 400,
+  "promo_video": {
+   "am": "",
+   "en": "",
+   "ru": ""
+  },
+  "client_links": {},
+  "default_lang": "am",
+  "accent_yellow": true,
+  "default_theme": "dark",
+  "heading_weight": 400
+ },
+ "modules": [
+  {
+   "id": "sales",
+   "key": "sales",
+   "icon": "trend",
+   "image_url": "/uploads/modules/1792589846055-odm4ff.jpg",
+   "image_url_light": "/uploads/modules/1793013414938-hu3blh.png",
+   "title": {
+    "am": "Վաճառք",
+    "en": "Sales",
+    "ru": "Продажи"
+   },
+   "desc": {
+    "am": "Տեսեք յուրաքանչյուր վաճառքի ընթացքը՝ պատվերից մինչև վճարում",
+    "en": "The full sales cycle — from order to waybill, reservation, return and payments.",
+    "ru": "Полный цикл продаж — от заказа до накладной, резервирования, возврата и оплат."
+   },
+   "long": {
+    "am": "Վաճառքի մոդուլը կառավարում է ամբողջ ընթացքը՝ պատվեր → բեռնագիր/ամրագրում → պահեստի ելք։ Ներառում է հաճախորդների և գների կառավարում, ապրանքի ամրագրում, վերադարձներ և վճարումների հաշվառում։ Փաստաթղթերն ավտոմատ համաժամանակեցվում են ՀԾ-ի հետ։",
+    "en": "The Sales module manages the whole cycle: order → waybill/reservation → stock out. It covers customers and pricing, reservations, returns and payment tracking, with documents synced automatically to ArmSoft.",
+    "ru": "Модуль продаж управляет полным циклом: заказ → накладная/резерв → списание со склада. Клиенты, цены, резервы, возвраты и учёт оплат, с автоматической синхронизацией документов с ArmSoft."
+   },
+   "video_url": null,
+   "sort": 1,
+   "active": true
+  },
+  {
+   "id": "purchases",
+   "key": "purchases",
+   "icon": "cart",
+   "image_url": "/uploads/modules/1792587647813-wohkuz.jpg",
+   "image_url_light": "/uploads/modules/1793013425028-7are6h.png",
+   "title": {
+    "am": "Գնումներ",
+    "en": "Purchases",
+    "ru": "Закупки"
+   },
+   "desc": {
+    "am": "Հայտ, պատվեր, ընդունում. քայլերը կապված են, ժամանակը՝ խնայված\n",
+    "en": "The purchasing chain — request → price inquiry → order → waybill → stock in.",
+    "ru": "Цепочка закупок — заявка → запрос цен → заказ → накладная → приход."
+   },
+   "long": {
+    "am": "Գնումների մոդուլն ավտոմատացնում է մատակարարման ողջ շղթան՝ գնման հայտից մինչև գնահարցում, պատվեր, բեռնագիր և պահեստի մուտք։ Կառավարեք մատակարարներին, համեմատեք գները և վերահսկեք ստացումները մեկ տեղից։",
+    "en": "Automates the full supply chain — from purchase request through price inquiry, order, waybill and stock in. Manage suppliers, compare prices and track receipts from one place.",
+    "ru": "Автоматизирует всю цепочку снабжения — от заявки через запрос цен, заказ, накладную и приход. Поставщики, сравнение цен и контроль поступлений в одном месте."
+   },
+   "video_url": null,
+   "sort": 2,
+   "active": true
+  },
+  {
+   "id": "storage",
+   "key": "storage",
+   "icon": "box",
+   "image_url": "/uploads/modules/1792587562118-wiv1mn.jpg",
+   "image_url_light": "/uploads/modules/1793013710261-s9naov.png",
+   "title": {
+    "am": "Պահեստ",
+    "en": "Storage",
+    "ru": "Склад"
+   },
+   "desc": {
+    "am": "Պահեստային հոսքեր՝ մուտք, ելք, ներքին տեղաշարժ և մնացորդների վերահսկում",
+    "en": "Warehouse flows — stock in, stock out, transfers and residual control.",
+    "ru": "Складские потоки — приход, расход, перемещения и контроль остатков."
+   },
+   "long": {
+    "am": "Պահեստի մոդուլը հետևում է ապրանքների շարժին բոլոր պահեստներում՝ մուտք, ելք, ներքին տեղաշարժ և փոխանցումներ։ Մնացորդները համաժամանակեցվում են ՀԾ-ի հետ, իսկ ScanIt-ով հնարավոր է շտրիխ-կոդով հաշվառում։",
+    "en": "Tracks goods across every warehouse — stock in and out, internal moves and transfers. Residuals stay in sync with ArmSoft, and ScanIt enables barcode-based counting.",
+    "ru": "Отслеживает товары по всем складам — приход, расход, внутренние перемещения и переводы. Остатки синхронизированы с ArmSoft, а ScanIt позволяет вести учёт по штрих-кодам."
+   },
+   "video_url": null,
+   "sort": 3,
+   "active": true
+  },
+  {
+   "id": "delivery",
+   "key": "delivery",
+   "icon": "truck",
+   "image_url": "/uploads/modules/1792585871404-8jo0sj.jpg",
+   "image_url_light": "/uploads/modules/1793013758338-xluyuf.png",
+   "title": {
+    "am": "Առաքում",
+    "en": "Delivery",
+    "ru": "Доставка"
+   },
+   "desc": {
+    "am": "Յուրաքանչյուր առաքման համար՝ հստակ վարորդ, մեքենա և երթուղի\n",
+    "en": "Delivery routes, drivers and waybill grouping.",
+    "ru": "Маршруты доставки, водители и группировка накладных."
+   },
+   "long": {
+    "am": "Առաքման մոդուլը բեռնագրերը խմբավորում է երթուղիների մեջ, հատկացնում վարորդներ և ավտոմեքենաներ։ Վարորդներն օգտագործում են բջջային հավելված՝ առաքումների կարգավիճակը իրական ժամանակում թարմացնելու համար։",
+    "en": "The Delivery module groups waybills into routes and assigns drivers and vehicles. Drivers use a mobile app to update delivery status in real time.",
+    "ru": "Модуль доставки группирует накладные в маршруты и назначает водителей и машины. Водители используют мобильное приложение для обновления статуса в реальном времени."
+   },
+   "video_url": null,
+   "sort": 4,
+   "active": true
+  },
+  {
+   "id": "production",
+   "key": "production",
+   "icon": "factory",
+   "image_url": "/uploads/modules/1792587298276-l587e2.jpg",
+   "image_url_light": "/uploads/modules/1793013688257-aciimv.png",
+   "title": {
+    "am": "Արտադրություն",
+    "en": "Production",
+    "ru": "Производство"
+   },
+   "desc": {
+    "am": "Արտադրական պլանավորում, տեսանելի արդյունք",
+    "en": "Production planning, bills of materials (BOM) and work assignments.",
+    "ru": "Планирование производства, спецификации (BOM) и рабочие задания."
+   },
+   "long": {
+    "am": "Արտադրության մոդուլը կառավարում է արտադրական պլանները, աշխատանքի հանձնարարականները՝ հումքից մինչև պատրաստի արտադրանք։",
+    "en": "The Production module manages production plans, bills of materials (BOM) and work assignments — from raw materials to finished goods.",
+    "ru": "Модуль производства управляет планами, спецификациями (BOM) и рабочими заданиями — от сырья до готовой продукции."
+   },
+   "video_url": null,
+   "sort": 5,
+   "active": true
+  },
+  {
+   "id": "management",
+   "key": "management",
+   "icon": "gear",
+   "image_url": "/uploads/modules/1792587348978-sjnugs.jpg",
+   "image_url_light": "/uploads/modules/1793013742845-xdm6q0.png",
+   "title": {
+    "am": "Կառավարում",
+    "en": "Management",
+    "ru": "Управление"
+   },
+   "desc": {
+    "am": "Օգտատերեր, իրավասություններ, տեղեկատուներ, կարգավորումներ ",
+    "en": "Users, permissions, reference data, configuration and audit.",
+    "ru": "Пользователи, права, справочники, настройки и аудит."
+   },
+   "long": {
+    "am": "Կառավարման մոդուլը տալիս է համակարգի ամբողջական վերահսկողություն՝ օգտատերեր և դերեր, իրավասություններ, տեղեկատուներ (ապրանքներ, միավորներ, գներ), համակարգի կարգավորումներ և փոփոխությունների պատմություն (աուդիտ)։",
+    "en": "The Management module gives full system control — users and roles, permissions, reference data (products, units, prices), system configuration and a change-history audit.",
+    "ru": "Модуль управления даёт полный контроль — пользователи и роли, права, справочники (товары, единицы, цены), настройки системы и аудит истории изменений."
+   },
+   "video_url": null,
+   "sort": 6,
+   "active": true
+  }
+ ],
+ "benefits": [
+  {
+   "id": "automation",
+   "icon": "gear",
+   "title": {
+    "am": "Գործընթացների ավտոմատացում",
+    "en": "Process Automation",
+    "ru": "Автоматизация процессов"
+   },
+   "desc": {
+    "am": "Ավելի արագ պատվերներ, ավելի արագ փաստաթղթեր, ավելի արագ արդյունք",
+    "en": "Faster orders, faster documents, faster results",
+    "ru": "Заказы, документы и результат — всё быстрее."
+   },
+   "sort": 1,
+   "active": true
+  },
+  {
+   "id": "control",
+   "icon": "hub",
+   "title": {
+    "am": "Ամբողջական վերահսկողություն",
+    "en": "Complete Control",
+    "ru": "Абсолютный контроль"
+   },
+   "desc": {
+    "am": "Բոլոր բաժինները միասին՝ մեկ ընդհանուր պատկերում\n",
+    "en": "All sections together in one overview",
+    "ru": "Все разделы вместе — в одной картине"
+   },
+   "sort": 2,
+   "active": true
+  },
+  {
+   "id": "reporting",
+   "icon": "chart",
+   "title": {
+    "am": "Իրական ժամանակի հաշվետվություն",
+    "en": "Up-to-Date Reports",
+    "ru": "Актуальные отчёты"
+   },
+   "desc": {
+    "am": "Ստացեք վերլուծություն ակնթարթորեն",
+    "en": "Get analytics and insights instantly",
+    "ru": "Получайте аналитику мгновенно"
+   },
+   "sort": 3,
+   "active": true
+  },
+  {
+   "id": "error",
+   "icon": "shield",
+   "title": {
+    "am": "Մարդկային սխալների նվազեցում",
+    "en": "Reduced Human Error",
+    "ru": "Меньше ошибок"
+   },
+   "desc": {
+    "am": "Համակարգը կանխում է սխալները",
+    "en": "The system prevents mistakes",
+    "ru": "Система предотвращает ошибки"
+   },
+   "sort": 4,
+   "active": true
+  }
+ ],
+ "whyStats": [
+  {
+   "id": "ops",
+   "target": "60",
+   "suffix": "%",
+   "decimals": 0,
+   "label": {
+    "am": "Ավելի արագ գործառնություններ",
+    "en": "Faster Operations",
+    "ru": "Быстрее операции"
+   },
+   "sort": 1
+  },
+  {
+   "id": "cost",
+   "target": "40",
+   "suffix": "%",
+   "decimals": 0,
+   "label": {
+    "am": "Ծախսերի կրճատում",
+    "en": "Cost Reduction",
+    "ru": "Снижение затрат"
+   },
+   "sort": 2
+  },
+  {
+   "id": "accuracy",
+   "target": "99.9",
+   "suffix": "%",
+   "decimals": 1,
+   "label": {
+    "am": "Տվյալների ճշգրտություն",
+    "en": "Data Accuracy",
+    "ru": "Точность данных"
+   },
+   "sort": 3
+  }
+ ],
+ "industries": [
+  {
+   "id": "wholesale",
+   "icon": "box",
+   "name": {
+    "am": "Մեծածախ",
+    "en": "Wholesale",
+    "ru": "Оптовая торговля"
+   },
+   "desc": {
+    "am": "Մեծ ծավալ, հստակ հաշվարկ\n",
+    "en": "Large volumes, clear calculations",
+    "ru": "Большие объёмы — чёткий расчёт"
+   },
+   "sort": 1,
+   "active": true
+  },
+  {
+   "id": "retail",
+   "icon": "store",
+   "name": {
+    "am": "Մանրածախ",
+    "en": "Retail",
+    "ru": "Розница"
+   },
+   "desc": {
+    "am": "Արագ վաճառք, ճիշտ մնացորդ",
+    "en": "Fast sales, accurate stock",
+    "ru": "Быстрые продажи, точные остатки"
+   },
+   "sort": 2,
+   "active": true
+  },
+  {
+   "id": "manufacturing",
+   "icon": "factory",
+   "name": {
+    "am": "Արտադրություն",
+    "en": "Manufacturing",
+    "ru": "Производство"
+   },
+   "desc": {
+    "am": "Արտադրության հայտեր, կատարված աշխատանք",
+    "en": "Production orders, completed work",
+    "ru": "Планирование производства и ресурсов"
+   },
+   "sort": 3,
+   "active": true
+  },
+  {
+   "id": "adedf261-3700-4586-b38a-246cf62f6a19",
+   "icon": "store",
+   "name": {
+    "am": "Բաշխում",
+    "en": "Distribution",
+    "ru": "Дистрибуция"
+   },
+   "desc": {
+    "am": "Պահեստներ, երթուղիներ, գնացուցակներ, վարորդի հավելված",
+    "en": "Multiple warehouses, delivery routes and price lists, driver app",
+    "ru": "Склады, маршруты, прайс-листы, приложение водителя"
+   },
+   "sort": 5,
+   "active": true
+  }
+ ],
+ "clients": [
+  {
+   "id": "c360shin",
+   "name": "360 Շինբազա",
+   "logo_url": "/uploads/clients/shin360-1792733461513.jpg",
+   "logo_mode": "both",
+   "url": "https://www.construction.am/companies/360-shinbaza/",
+   "sort": 1,
+   "active": true
+  },
+  {
+   "id": "carpaniv",
+   "name": "Արպանիվ",
+   "logo_url": "/uploads/clients/arpaniv-1792733458542.jpg",
+   "logo_mode": "both",
+   "url": "https://automax.am/hy/",
+   "sort": 2,
+   "active": true
+  },
+  {
+   "id": "cgepotaniq",
+   "name": "Գեպոտանիք",
+   "logo_url": "/uploads/clients/gepo-1792733461153.png",
+   "logo_mode": "both",
+   "url": "https://www.gepotaniq.am/",
+   "sort": 3,
+   "active": true
+  },
+  {
+   "id": "chska",
+   "name": "Հսկա",
+   "logo_url": "/uploads/clients/hska-1792733460732.png",
+   "logo_mode": "dark",
+   "url": "https://hska.am/hy/service/concrete",
+   "sort": 4,
+   "active": true
+  },
+  {
+   "id": "ccomplexbar",
+   "name": "Կոմպլեքս-Բար",
+   "logo_url": "/uploads/clients/komplexbar-1792733460312.png",
+   "logo_mode": "both",
+   "url": "https://complexbar.am/",
+   "sort": 5,
+   "active": true
+  }
+ ],
+ "partners": [
+  {
+   "id": "p_armsoft",
+   "name": "ՀԾ (ArmSoft)",
+   "logo_url": "/uploads/partners/1792767628704-8ktm8y.png",
+   "logo_mode": "both",
+   "desc": {
+    "am": "Հաշվապահական ծրագիր՝ մնացորդների, փաստաթղթերի և վճարումների համաժամանակեցում",
+    "en": "Sync with accounting software: stock, documents, payments",
+    "ru": "Синхронизация с бухгалтерской программой: остатки, документы, платежи"
+   },
+   "long": {
+    "am": "",
+    "en": "",
+    "ru": ""
+   },
+   "link": "#",
+   "sort": 1,
+   "active": true
+  },
+  {
+   "id": "p_scanit",
+   "name": "ScanIt",
+   "logo_url": "/uploads/partners/1792767646764-0v0e8u.png",
+   "logo_mode": "both",
+   "desc": {
+    "am": "Շտրիխ-կոդով հաշվառում՝ պահեստի մուտք/ելք և գույքագրում",
+    "en": "Barcode-based stock control: receiving, dispatch and stock counts",
+    "ru": "Учёт по штрихкоду: приход, расход и инвентаризация склада"
+   },
+   "long": {
+    "am": "",
+    "en": "",
+    "ru": ""
+   },
+   "link": "#",
+   "sort": 2,
+   "active": true
+  },
+  {
+   "id": "p_einvoice",
+   "name": "E-invoicing",
+   "logo_url": "/uploads/partners/1792767998335-9h0o9b.png",
+   "logo_mode": "both",
+   "desc": {
+    "am": "Հարկային էլեկտրոնային հաշիվ-ապրանքագրերի ավտոմատ ուղարկում",
+    "en": "Automatic submission of tax e-invoices.",
+    "ru": "Автоматическая отправка налоговых э-счетов."
+   },
+   "long": {
+    "am": "",
+    "en": "",
+    "ru": ""
+   },
+   "link": "#",
+   "sort": 3,
+   "active": true
+  }
+ ],
+ "stories": [
+  {
+   "id": "s1",
+   "name": "360 Շինբազա",
+   "logo_url": null,
+   "industry": {
+    "am": "Շինանյութ",
+    "en": "Building materials",
+    "ru": "Стройматериалы"
+   },
+   "challenge": {
+    "am": "Դանդաղ, ձեռքով պատվերների մշակում խանութներում։",
+    "en": "Slow, manual order processing across stores.",
+    "ru": "Медленная ручная обработка заказов в магазинах."
+   },
+   "solution": {
+    "am": "Ներդրվեցին BC Վաճառք և Պահեստ մոդուլները։",
+    "en": "Deployed BC Sales and Warehouse modules.",
+    "ru": "Внедрены модули BC Продажи и Склад."
+   },
+   "metrics": [
+    {
+     "label": {
+      "am": "Ավելի արագ պատվերների մշակում",
+      "en": "Faster order processing",
+      "ru": "Быстрее обработка заказов"
+     },
+     "suffix": "%",
+     "target": 50,
+     "decimals": 0
+    },
+    {
+     "label": {
+      "am": "Վաճառքի ավելի մեծ տեսանելիություն",
+      "en": "More sales visibility",
+      "ru": "Больше прозрачности продаж"
+     },
+     "suffix": "%",
+     "target": 30,
+     "decimals": 0
+    }
+   ],
+   "sort": 1,
+   "active": true
+  },
+  {
+   "id": "s2",
+   "name": "Արպանիվ",
+   "logo_url": null,
+   "industry": {
+    "am": "Դիստրիբյուցիա",
+    "en": "Distribution",
+    "ru": "Дистрибуция"
+   },
+   "challenge": {
+    "am": "Հաճախակի պաշարի սպառում և ավելցուկ։",
+    "en": "Frequent stockouts and excess inventory.",
+    "ru": "Частые дефициты и избыток запасов."
+   },
+   "solution": {
+    "am": "Կենտրոնացված պաշարներ BC Պահեստով։",
+    "en": "Centralized inventory with BC Warehouse.",
+    "ru": "Централизованные запасы с BC Склад."
+   },
+   "metrics": [
+    {
+     "label": {
+      "am": "Պաշարների օպտիմալացում",
+      "en": "Inventory optimization",
+      "ru": "Оптимизация запасов"
+     },
+     "suffix": "%",
+     "target": 35,
+     "decimals": 0
+    },
+    {
+     "label": {
+      "am": "Ավելի քիչ պակասորդ",
+      "en": "Fewer stockouts",
+      "ru": "Меньше дефицита"
+     },
+     "suffix": "%",
+     "target": 25,
+     "decimals": 0
+    }
+   ],
+   "sort": 2,
+   "active": true
+  },
+  {
+   "id": "s3",
+   "name": "Կոմպլեքս-Բար",
+   "logo_url": null,
+   "industry": {
+    "am": "Մեծածախ",
+    "en": "Wholesale",
+    "ru": "Опт"
+   },
+   "challenge": {
+    "am": "Ձեռքով տվյալների մուտքագրում և դանդաղ գույքագրում։",
+    "en": "Heavy manual data entry and slow inventory counts.",
+    "ru": "Ручной ввод данных и медленная инвентаризация."
+   },
+   "solution": {
+    "am": "Վաճառքի և պահեստի ավտոմատացում BC-ով՝ ScanIt շտրիխ-կոդով հաշվառմամբ։",
+    "en": "Automated sales and storage with BC and ScanIt barcode scanning.",
+    "ru": "Автоматизация продаж и склада с BC и сканированием штрих-кодов ScanIt."
+   },
+   "metrics": [
+    {
+     "label": {
+      "am": "Ավելի քիչ ձեռքով աշխատանք",
+      "en": "Less manual work",
+      "ru": "Меньше ручного труда"
+     },
+     "suffix": "%",
+     "target": 40,
+     "decimals": 0
+    },
+    {
+     "label": {
+      "am": "Տվյալների ճշգրտություն",
+      "en": "Data accuracy",
+      "ru": "Точность данных"
+     },
+     "suffix": "%",
+     "target": 99.9,
+     "decimals": 1
+    }
+   ],
+   "sort": 3,
+   "active": true
+  }
+ ],
+ "proof": [
+  {
+   "id": "processes",
+   "target": "1000",
+   "suffix": "+",
+   "label": {
+    "am": "Ավտոմատացված գործընթացներ",
+    "en": "Automated processes",
+    "ru": "Автоматизированные процессы"
+   },
+   "sort": 1
+  },
+  {
+   "id": "users",
+   "target": "500",
+   "suffix": "+",
+   "label": {
+    "am": "Ակտիվ օգտատերեր",
+    "en": "Active users",
+    "ru": "Активные пользователи"
+   },
+   "sort": 2
+  },
+  {
+   "id": "years",
+   "target": "3",
+   "suffix": "+",
+   "label": {
+    "am": "Տարիների փորձ",
+    "en": "Years of experience",
+    "ru": "Лет опыта"
+   },
+   "sort": 3
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+# dependencies / build output
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+npm-debug.log*
+
+# secrets — never commit
+.env
+.env.*
+!.env.local.example
+config.php
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+node_modules
+.next
+.vercel
+*.tsbuildinfo
+npm-debug.log*
+# secrets
+.env
+.env.*
+!.env.local.example
